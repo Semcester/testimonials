@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1440px;
+  width: 100%;
+  padding: 20px;
+}
+img {
+  border-radius: 100%;
+  border: 3px solid #e951f7;
+}
+.left-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 75%;
+}
+.row {
+  display: flex;
+  gap: 20px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.head-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.head-title {
+  display: flex;
+  flex-direction: column;
+}
+.head-title span:last-child {
+  color: rgb(228, 226, 226);
+  font-weight: 500;
+  opacity: 0.5;
+}
+.purple-2xl {
+  background-image: url("/assets/images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: 75% 0%;
+  width: 50%;
+
+  background-color: hsl(263, 55%, 52%);
+}
+p {
+  color: rgb(228, 226, 226);
+  font-weight: 500;
+  opacity: 0.8;
+}
+.gray {
+  width: 35%;
+  background-color: hsl(217, 19%, 35%);
+}
+.gray img {
+  border: 3px solid #fff;
+}
+.white {
+  width: 35%;
+  color: black;
+}
+.white span:last-child {
+  color: black;
+}
+.white img {
+  border: none;
+}
+.white p {
+  color: black;
+}
+.black {
+  width: 50%;
+
+  background-color: black;
+}
+.right-high {
+  width: 25%;
+  color: black;
+}
+.right-high p {
+  color: black;
+}
+
+@media screen and (max-width: 375px) {
+  .card-container {
+    flex-direction: column;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .card {
+    width: 80%;
+  }
+  .left-cards {
+    width: 100%;
+  }
+  .right-high {
+    margin-top: 20px;
+  }
+}
